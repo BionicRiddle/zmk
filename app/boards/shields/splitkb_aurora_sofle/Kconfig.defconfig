@@ -4,7 +4,7 @@
 if SHIELD_SPLITKB_AURORA_SOFLE_LEFT
 
 config ZMK_KEYBOARD_NAME
-    default "Aurora Sofle"
+    default "Sofle BT"
 
 config ZMK_SPLIT_ROLE_CENTRAL
     default y
