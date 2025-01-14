@@ -7,6 +7,30 @@ menuconfig ZMK_DISPLAY
     select LVGL
     select LV_CONF_MINIMAL
 
+config ZMK_DISPLAY_PADDING_TOP
+    int "Top padding"
+    default 0
+    help
+        Set the top padding for the display content.
+
+config ZMK_DISPLAY_PADDING_BOTTOM
+    int "Bottom padding"
+    default 0
+    help
+        Set the bottom padding for the display content.
+
+config ZMK_DISPLAY_PADDING_LEFT
+    int "Left padding"
+    default 0
+    help
+        Set the left padding for the display content.
+
+config ZMK_DISPLAY_PADDING_RIGHT
+    int "Right padding"
+    default 0
+    help
+        Set the right padding for the display content.
+
 if ZMK_DISPLAY
 
 config ZMK_DISPLAY_BLANK_ON_IDLE
