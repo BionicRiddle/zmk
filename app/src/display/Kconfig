@@ -7,6 +7,12 @@ menuconfig ZMK_DISPLAY
     select LVGL
     imply LV_CONF_MINIMAL
 
+if ZMK_DISPLAY
+
+config ZMK_DISPLAY_BLANK_ON_IDLE
+    bool "Blank display on idle"
+    default y if SSD1306
+
 config ZMK_DISPLAY_PADDING_TOP
     int "Top padding"
     default 0
@@ -30,8 +36,6 @@ config ZMK_DISPLAY_PADDING_RIGHT
     default 0
     help
         Set the right padding for the display content.
-
-if ZMK_DISPLAY
 
 config ZMK_DISPLAY_BLANK_ON_IDLE
     bool "Blank display on idle"
