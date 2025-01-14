@@ -43,10 +43,10 @@ lv_obj_t *zmk_display_status_screen() {
     lv_style_init(&style);
 
     // Set padding values using configuration options
-    lv_style_set_pad_top(&style, LV_STATE_DEFAULT, CONFIG_ZMK_DISPLAY_PADDING_TOP);
-    lv_style_set_pad_bottom(&style, LV_STATE_DEFAULT, CONFIG_ZMK_DISPLAY_PADDING_BOTTOM);
-    lv_style_set_pad_left(&style, LV_STATE_DEFAULT, CONFIG_ZMK_DISPLAY_PADDING_LEFT);
-    lv_style_set_pad_right(&style, LV_STATE_DEFAULT, CONFIG_ZMK_DISPLAY_PADDING_RIGHT);
+    lv_style_set_pad_top(&style, CONFIG_ZMK_DISPLAY_PADDING_TOP);
+    lv_style_set_pad_bottom(&style, CONFIG_ZMK_DISPLAY_PADDING_BOTTOM);
+    lv_style_set_pad_left(&style, CONFIG_ZMK_DISPLAY_PADDING_LEFT);
+    lv_style_set_pad_right(&style, CONFIG_ZMK_DISPLAY_PADDING_RIGHT);
 
 #if IS_ENABLED(CONFIG_ZMK_WIDGET_BATTERY_STATUS)
     zmk_widget_battery_status_init(&battery_status_widget, screen);
