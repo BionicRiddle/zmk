@@ -15,7 +15,7 @@ config ZMK_DISPLAY_BLANK_ON_IDLE
 
 config ZMK_DISPLAY_PADDING_TOP
     int "Top padding"
-    default 0
+    default 50
     help
         Set the top padding for the display content.
 
