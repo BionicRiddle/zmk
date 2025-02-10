@@ -36,6 +36,9 @@ config ZMK_DISPLAY_PADDING_RIGHT
     default 0
     help
         Set the right padding for the display content.
+config ZMK_DISPLAY_TICK_PERIOD_MS
+    int "Period (in ms) between display task execution"
+    default 10
 
 if LV_USE_THEME_MONO
 
